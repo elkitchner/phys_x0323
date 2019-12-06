@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\pagestyle{myheadings}
+\def\ls{\vskip 7pt}                            %One line space.%
+\textwidth=6.5in
+\textheight=9.0in
+\hoffset=0.0in
+\voffset=0.0in
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{9.0in} 
+\setlength{\textwidth}{6.5in} 
+\setlength{\oddsidemargin}{-0.2in}
+\setlength{\evensidemargin}{-0.2in}
+\usepackage{amsmath}
+%
+\def\hfb          {\hfill\break}
+\def\hsp          {\hskip 5pt}
+\def\vs           {\vskip 10pt}
+\def\mybase       {\baselineskip= 13pt plus 1pt minus 1pt}
+\def\undertext#1  {$\underline{\smash{\hbox{#1}}}$}
+\def\vp           {\hfill\vskip 12pt plus 1pt minus 1pt}
+
+\parskip=10pt
+\parindent=0pt
+
+\pagestyle{empty}
+
+\begin{document}
+
+
+\centerline{\bf PHYS 20323/60323: Fall 2019- LaTeX Example}
+\vskip 0.15in
+
+
+\begin{enumerate}
+
+
+\item {Consider a particle confined in a two-dimensional infinite square well}
+\begin{align*}
+    V(x,y)= \left\{ \frac{0}{\infty}\begin{array}{lr} 
+      0\leq x \leq a   ,   0 < y < a \\
+      0\leq x\leq 100 \\
+   \end{array}
+\end{align*}
+\begin{comment}
+\begin{displaymath}
+   f(x) = \left\{
+     \begin{array}{lr}
+       1 & : x \in \mathbb{Q}\\
+       0 & : x \notin \mathbb{Q}
+     \end{array}
+   \right.
+\end{displaymath} 
+\end{comment}
+The eigenfunctions have the form:
+\begin{align*}
+    {\bf\Psi}(x,y)= \frac{2}{a}\sin{\left(\frac{n\pi x}{a}\right)} \sin{\left(\frac{m\pi y}{a}\right)}
+\end{align*}
+with the corresponding energies being given by:
+\begin{align*}
+    E_{nm}=\left(n^2 +m^2 \right) \frac{\pi^2 \hbar^2}{2ma^2}
+\end{align*}
+\begin{enumerate}
+\item (5 points) What are the levels of degeneracy of the five lowest energy values?
+
+\item (5 points) Consider a perturbation given by:
+\begin{align*}
+    \hat{H}'=a^2 V_0  \delta \left(x- \frac{a}{2}\right)\delta\left(y- \frac{a}{2}\right)
+\end{align*}
+Calculate the first order correction to the ground state energy.
+
+\end{enumerate}
+
+\vskip 0.15in
+
+\item {\bf The following questions refer to stars in the Table Below.}\\
+Note: There may be multiple answers.\\ 
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ Name & Mass & Luminosity & Lifetime & Temperature & Radius \\ 
+\hline
+ Zeta & $60. {\it M_{sun}}$ & $10^6 {\it L_{sun}}$ &  $8.0*10^5$ years & & \\ 
+ \hline
+Epsilon & $6.0 {\it M_{sun}}$ & $10^3 {\it L_{sun}}$ & & $20,000$ K& \\
+\hline
+Delta & $2.0 {\it M_{sun}}$ &  &  $5.0*10^8$ years & & \\
+\hline
+Beta & $1.3 {\it M_{sun}}$ & $3.5 {\it L_{sun}}$ &  & & $2 {\it R_{sun}}$ \\
+\hline
+Alpha & $1.0 {\it M_{sun}}$ &  &   & & $1 {\it R_{sum}} $\\
+\hline
+Gamma & $0.7 {\it M_{sun}}$ &  &  $4.5*10^10$ years & $5000$ K& \\
+\hline
+\end{tabular}
+
+
+\begin{enumerate}
+\item(4 points) Which of these stars will produce a planetary nebula at the end of their life.\\
+
+\vskip 0.15in
+
+\item (4 points) Elements heavier than {\it Carbon} will be produced in which stars.
+\end{enumerate}
+
+
+
+%\end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}
+
